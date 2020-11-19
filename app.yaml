@@ -3,6 +3,9 @@ version: 1
 runtime: python27
 api_version: 1
 threadsafe: true
+# Limit the number of instances to limit costs to keep it under the free quota.
+# More details available at: https://cloud.google.com/appengine/docs/managing-costs
+max_instances: 1
 
 handlers:
 - url: /css
